@@ -1,6 +1,25 @@
 # RoutesPlanes
 ## Backend/API 
 
+## Database Schema
+
+### Tables and Columns
+
+- **AIRPORT**
+  - `id`: Integer, primary key.
+  - `name`: String.
+  - `location`: String.
+
+- **AIRLINE**
+  - `id`: Integer, primary key.
+  - `name`: String.
+
+- **TERMINAL**
+  - `id`: Integer, primary key.
+  - `airport_id`: Integer, foreign key referencing `id` column in Researchers table. Add "ON DELETE SET NULL".
+  - `airline_id`: Integer, foreign key referencing `id` column in Species table. Add "ON DELETE CASCADE".
+
+
 ### Seed Data
 - **AIRPORT**
   - JFK, Brooklny NY.
@@ -16,10 +35,21 @@
 
 
 - **Terminal**
-  - LGA : A
-  - LGA : B
-  - LGA : C
-  - LGA : D
+  - LGA : A has JetBlue & American
+  - LGA : B has Spirit
+  - LGA : C has United
+  - LGA : D has South West
+  - JFK : 1 
+  - JFK : 2
+  - JFK : 3
+  - JFK : 4
+  - JFK : 5
+  - EWR : 1
+  - EWR : 2
+  - EWR : 3
+  - EWR : 4
+  - EWR : 5
+
 
 
 ### Routes

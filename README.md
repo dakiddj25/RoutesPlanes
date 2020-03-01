@@ -18,6 +18,8 @@
   - `id`: Integer, primary key.
   - `airport_id`: Integer, foreign key referencing `id` column in Researchers table. Add "ON DELETE SET NULL".
   - `airline_id`: Integer, foreign key referencing `id` column in Species table. Add "ON DELETE CASCADE".
+  `name`: String.
+
 
 
 ### Seed Data
